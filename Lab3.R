@@ -1,0 +1,8 @@
+library(Biostrings)
+library(pwalign)
+getwd()
+setwd("~/Desktop/Bioinformatics")
+seq1 <- readDNAStringSet("seqref-2.fasta")
+seq2 <- readDNAStringSet("Lab_3_Sequences (Autosaved).fasta")
+pid(aln)
+pairwiseAlignment(seq1, seq2)
