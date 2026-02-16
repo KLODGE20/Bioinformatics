@@ -40,4 +40,6 @@ BiocManager::install("phagorn")
 if (!require("BiocManager", quietly = TRUE))
 install.packages("phangorn")  
 library("phangorn")
-inst
+
+alignment_phydat <- msaConvert(ElephantAlignment, type = "phangorn::phyDat")
+write.phyDat(alignment_phydat, "alignment.fasta", format = "fasta") 
