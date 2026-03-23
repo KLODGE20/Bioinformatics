@@ -8,7 +8,6 @@ library(UniprotR)
 library(protti)
 library(r3dmol)
 
-
 read.fasta("Elephant1.fasta")
 E1DNA <- readDNAStringSet("Elephant1.fasta")
 E1AA <- Biostrings::translate(E1DNA)
@@ -27,8 +26,8 @@ PlotGoInfo(GOResult)
 PlotGOAll(GOObj = GeneOntologyObj, Top = 10, directorypath = getwd(), width = 8, height = 5)
 # Pushes GO terms to github
 
-GetPathology_Biotech(GOResult)
-Get.diseases(GOResult)
+GetPathology_Biotech(Accessions)
+Get.diseases(Accessions)
 # Gives you in on the diseases/pathologies associated with the gene
 
 fetch_uniprot(Accessions)
