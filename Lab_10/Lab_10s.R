@@ -16,23 +16,23 @@ E1AA <- Biostrings::translate(E1DNA)
 Biostrings::writeXStringSet(E1AA, "Elephant_AA.fasta")
 # make the sequence into a fasta file
 
-Accessions <- read.csv("Lab_10_#.txt")
+Accessions <- read.csv("Lab_10_#.txt", header = FALSE)
 # save your uniprotr accession numbers to a character set
 
 GOResult <- GetProteinGOInfo(Accessions)
 PlotGoInfo(GOResult)
 # Gives you info on the proteins based on accession numbers
 
-PlotGOAll(GOObj = GeneOntologyObj, Top = 10, directorypath = getwd(), width = 8, height = 5)
+PlotGOAll(GOObj = GOResult, Top = 10, directorypath = getwd(), width = 8, height = 5)
 # Pushes GO terms to github
 
-GetPathology_Biotech(Accessions)
-Get.diseases(Accessions)
+PathR <- GetPathology_Biotech(Accessions)
+Get.diseases(PathR)
 # Gives you in on the diseases/pathologies associated with the gene
 
-fetch_uniprot(Accessions)
-fetch_pdb(Accessions)
+Fetch1 <- fetch_uniprot(Accessions$V1)
+Fetch2 <- fetch_pdb(Accessions$V1)
 # Provides information on things such as protein structure
 
-fetch_alphafold_prediction(Accessions)
+3DProtein <- fetch_alphafold_prediction(Accessions$V1)
 # Provides 3D structure of protein
