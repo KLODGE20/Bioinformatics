@@ -34,5 +34,5 @@ Fetch1 <- fetch_uniprot(Accessions$V1)
 Fetch2 <- fetch_pdb(Accessions$V1)
 # Provides information on things such as protein structure
 
-3DProtein <- fetch_alphafold_prediction(Accessions$V1)
+Proteinpic <- fetch_alphafold_prediction(Accessions$V1)
 # Provides 3D structure of protein
