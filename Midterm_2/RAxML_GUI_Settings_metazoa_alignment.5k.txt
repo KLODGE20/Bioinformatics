@@ -1,0 +1,6 @@
+The analysis was run using raxmlGUI 2.0 (version 2.0.16) as follows:
+Analysis: ML + transfer bootstrap expectation + consensus
+Binary: raxml-ng version 1.2.2
+Results saved to: /Users/kristenlodge/Documents/GitHub/Bioinformatics/Midterm_2
+RAxML was called with these arguments:
+1.) --all --msa /Users/kristenlodge/Documents/GitHub/Bioinformatics/Midterm_2/metazoa_alignment.5k_modified.fasta --model GTR --prefix /Users/kristenlodge/Documents/GitHub/Bioinformatics/Midterm_2/metazoa_alignment.5k --seed 41557 --bs-metric tbe --tree rand{10} --bs-trees 100
