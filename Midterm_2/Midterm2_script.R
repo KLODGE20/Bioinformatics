@@ -25,6 +25,7 @@ Accession <- read.csv("MidAccessions.txt")
 
 #Gives you info on the proteins based on accession numbers
 Goresult <- GetProteinGOInfo(Accession)
+plot <- PlotGoInfo(Goresult)
 
 # provides 3D structures of protein
 PD <- fetch_alphafold_prediction(Accession)
