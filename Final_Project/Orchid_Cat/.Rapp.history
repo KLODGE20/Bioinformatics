@@ -1,0 +1,63 @@
+install.packages("swirl")
+library("swirl")
+swirl
+"swirl"
+swirl()
+install.packages("stringi")
+library("swirl")
+swirl()
+library(stringy)
+library(stringi)
+library("swirl")
+install.packages("swirl")
+library("swirl")
+swirl()
+library("swirl")
+install.packages("swirl")
+library("swirl")
+install.packages("vctrs")
+library("swirl")
+swirl()
+library(Biostrings)
+library(msa)
+aln = readDNAStringSet("orchids.fasta")
+aln = readDNAStringSet("orchids.fasta")
+aln
+names(aln[99])
+names(aln[31])
+names(aln)
+names(aln$"Dendrobium")
+names(aln$"LC193521.1 Dendrobium fimbriatum chloroplas DNA, complete genome")
+names(aln$"NC_035327.1 Dendrobium gratiosissimum chloroplast DNA, complete genome")
+names(aln$)
+names(aln$"P")
+aln$"P"
+aln$"MZ571477.1 Iris germanica chloroplast, complete genome"
+aln$"LC193521.1 Dendrobium fimbriatum chloroplast DNA, complete genome"
+list.files
+list.files()
+aln = readDNAStringSet("orchids.fasta")
+aln
+aln = readDNAStringSet("orchids.fasta")
+aln
+orchidaa = translate(aln)
+orchidaa
+aln[37]
+aln[37][[10232]]
+aln[37][[1]]
+aln[31][[1]][1]
+aln[31][[1]][10232]
+aln[37][[1]][10232]
+names(aln[37])
+aln[37] = replaceLetterAt(aln[37], 10232, "")
+aln = replaceLetterAt(aln[37, 10232,""])
+aln = replaceLetterAt(aln[37], 10232,"")
+aln
+?replaceLetterAt
+copy = replaceLetterAt(aln[37][[1]], 10232, "")
+?replaceLetterAt
+aln = readDNAStringSet("orchids.fasta")
+aln
+aln[37][[1]][10232]
+aln = readDNAStringSet("orchids.fasta")
+aln
